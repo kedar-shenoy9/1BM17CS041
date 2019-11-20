@@ -43,7 +43,7 @@ int main()
             if(i == j)
                 continue;
             if(j == rt[i].from[j]){
-                printf("\t\nTo node %d directly ", j+1);
+                printf("\t\nTo node %d directly, distance %d", j+1, rt[i].dist[j]);
                 continue;
             }
             printf("\t\nNode %d via %d Distance %d ",j+1,rt[i].from[j]+1,rt[i].dist[j]);
